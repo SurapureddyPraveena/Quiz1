@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz App</title>
+        <link rel="stylesheet" href="quiz.css" />
+        <script src="quiz.js" defer></script>
+    </head>
+    <body>
+        <div id="username">
+            <h2>Enter Your Name</h2>
+            <input type="text" id="Uname">
+            <div id="error" style="display: none"></div>
+            <button type="submit" id="nextPage">Sign in</button>
+        </div>
+        <div id="rules" style="display: none">
+            <h2 style="text-align: center;">Rules of Quiz</h2>
+            <hr>
+            <ol type="1">
+                <li>You have to complete the quiz in <b>5 minutes</b> else, quiz is automatically submitted.</li>
+                <li>No negative marking and you can attempt all the questions.</li>
+                <li>You can exit the quiz at any time but the score will not be recorded.</li>
+                <li>Each question carries one mark</li>
+            </ol>
+            <h1 style="text-align: center;">ALL THE BEST!!!</h1>
+            <button type="submit" id="rules_submit">START THE QUIZ</button>
+        </div>
+        <div style="display: none" id="startquiz">
+            <div class="quiz-container" id="quiz">
+                <div class="quiz-header">
+                    <div id="head">
+                        <pre id="time">Timeleft: </pre>
+                        <pre id="min">5  </pre>
+                        <pre id="minutes">  minutes </pre>
+                        <pre id="count">0  </pre>
+                        <pre id="seconds">  seconds</pre>
+                    </div>
+                    <h2 id="question">Question text</h2>
+                    <ul>
+                        <li>
+                            <input type="radio" id="a" name="answer" class="answer"/>
+                            <label id="a_text" for="a">Question</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="b" name="answer" class="answer"/>
+                            <label id="b_text" for="b">Question</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="c" name="answer" class="answer"/>
+                            <label id="c_text" for="c">Question</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="d" name="answer" class="answer"/>
+                            <label id="d_text" for="d">Question</label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="buttons">
+                    <button id="submit">Submit</button>
+                    <button id="exit" title="You will exit the Quiz!!!" onclick="location.reload()">Exit</button>
+                    
+                </div>
+            </div>
+        </div>
+        <br>
+        <table id="table" style="display:none">
+            <tr>
+                <td><b>NAME</b></td>
+                <td><b>SCORE</b></td>
+            </tr>
+        </table>
+    </body>
+</html>

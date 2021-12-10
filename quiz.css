@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+#username {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-style: solid;
+  padding: 25px;
+  border-radius: 5px;
+  border-color: rgba(120, 129, 120, 0.8);
+  background-color: white;
+  outline: none;
+}
+
+#Uname {
+  border-radius: 5px;
+  border-style: none;
+  padding: 15px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: rgb(212, 208, 212);
+}
+
+#name:focus {
+  border-style: solid;
+  border-color: rgba(171, 179, 171, 0.8);
+}
+.quiz-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  overflow: hidden;
+  width: 600px;
+  max-width: 100%;
+}
+
+.quiz-header {
+  padding: 4rem;
+}
+
+h2 {
+  padding: 0.2rem;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+button {
+  background-color: #8e44ad;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: 1rem;
+  width: 100%;
+  padding: 1.2rem;
+}
+
+button:hover {
+  background-color: #732d91;
+}
+
+button:focus {
+  background-color: #5e3370;
+  outline: none;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+#exit {
+  background-color: rgb(248, 81, 52);
+}
+#exit:hover {
+  background-color: red;
+}
+
+#quit {
+  display: flex;
+  justify-content: space-around;
+}
+#opt {
+  background-color: rgb(138, 125, 138);
+  width: 200px;
+  border-radius: 2px;
+}
+.options {
+  background-color: rgb(172, 164, 172);
+  border-style: solid;
+  border: rgba(120, 129, 120, 0.8);
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;
+}
+.options:hover {
+  background-color: rgba(120, 129, 120, 0.8);
+}
+
+#rules {
+  background-color: white;
+}
+
+#head {
+  display: flex;
+  width: 400px;
+  background-color: lavender;
+  justify-content: center;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: lavender;
+}
+#time,
+#count,
+#seconds,
+#min,
+#minutes {
+  font-family: inherit;
+}
+#nextPage {
+  margin-top: 10px;
+  border-radius: 100%;
+}
+#table {
+  background-color: white;
+  width: 400px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: black;
+}
+
+td {
+  border: 1px solid black;
+  width: 100%;
+  padding: 5px 10px;
+}
